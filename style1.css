@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global Styles */
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: black;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: black;
+}
+
+h4 {
+  font-size: 20px;
+  color: black;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: black;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+.button{
+    font-size: large;
+    color:white;
+}
+.section-m1 {
+  margin: 40px 0;
+}
+
+body {
+  width: 100%;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: whitesmoke;
+    box-shadow: 0 5px 15px rgba(0, 0,0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black ;
+    transition: 0.3s ease;
+
+}
+#navbar li a:hover,
+#navbar li a.active
+{
+    color:purple
+}
+
+#navbar li a.active::after
+#navbar li a:hover::after  
+{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background:greenyellow;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#hero{
+    background-image: url(img/home.jpeg);
+    height:  70vh;
+    width: 100%;
+    background-size:cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#hero h4{
+    padding-bottom: 15px;
+}
+#hero h1{
+    color:white
+}
+#hero button{
+    background-image: url("img/button.png");
+    background-color: transparent;
+    color: white;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px ;
+}
+#feature
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#feature .fe-box{
+    width:180px;
+    text-align:center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0,0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#product1{
+    text-align: center;
+}
+#product1 .pro-container{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0,0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    text-align: left;
+}
+
+#product1 .pro img{
+    width: 100%; 
+    border-radius: 10px;
+}
+
+#product1 .pro .des span{
+    color:gray;
+    font-size:small;
+}
+#lower 
+{
+  text-align: center;
+  background-color: white;
+}
+#lower1
+{
+  text-align: center;
+  background-color: black;
+}
+h8{
+  font-size: 10px;
+  color: black;
+}
+h7{
+  font-size: 10px;
+  color: black;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid ;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: whitesmoke;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: black;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.iframe {
+  width: 100%;
+  height: 70vh;
+}
+label{
+  color: white;
+}
+h21{
+  font-size: 46px;
+  line-height: 54px;
+  color:white;
+}
+/* I always reset all the html elements */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: sans-serif;
+	min-height: 100vh;
+	color: #555;
+}
+
+table{
+	width:  1000px;
+	margin: 30px auto;
+}
+
+table th{
+	padding: 10px 0;
+	background-color: #f4f4f4;
+	/* background-color: #fff; */
+	border:  thin solid #d4d4d4;
+}
+
+table td{
+	padding: 10px;
+	border:  thin solid #d4d4d4;
+	width: 18%;
+	text-align: center;
+	background-color: #fff;
+}
+
+table img{
+	width:  70%;
+}
+
+table td.total-price{
+	font-weight: bold;
+	font-size: 22px;
+}
+table a{
+	text-decoration: none;
+	color: darkred;
+	background-color: #ffecef;
+	padding: 10px 15px;
+}
+table a:active{
+	background-color: #ccf4d6;
+	color:  green;
+}
+
+table select{
+	padding: 10px;
+	width:  200px;
+	font-size: 16px;
+	border: thin solid #d4d4d4;
+	background-color: transparent;
+}
+table select:focus{
+	outline: none;
+}
+
+table img{
+	width:  60%;
+}
+.button {
+  position: relative;
+  background-color: #d04217;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  background: #dd908c;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
