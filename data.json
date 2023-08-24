@@ -1,0 +1,86 @@
+[
+    {
+        "name": "anthony",
+        "id": 1,
+        "username": "anthonyhuang1909@gmail.com",
+        "password": "$2y$10$wSSQZE6mhAMkWWPpIN8VIuohyJvLQtv3qBf0aR3kxQfUPad6HtgHi",
+        "money": 0
+    },
+    {
+        "name": "1",
+        "id": 1,
+        "username": "1",
+        "password": "$2y$10$7oKFMLFPQcyl20.qqhQJ9ODVlmGsvzVwNbHip6zVghLhmlHsSNS4u",
+        "money": 0
+    },
+    {
+        "name": "tyf",
+        "id": 1,
+        "username": "1577615968@qq.com",
+        "password": "$2y$10$.c.N.Jf3WY\/Gn5wblplaYe\/Zb.yAGK0PW0eChUnjYZU4ctqLQHmF6",
+        "money": 0
+    },
+    {
+        "name": "123",
+        "id": "2",
+        "username": "123@qq.com",
+        "password": "$2y$10$qnMAB2C776Xw8L5Em77d4eb2Hp8K.3n3KQ8wwgJWpMW2hDnOj6SH.",
+        "money": "23"
+    },
+    {
+        "name": "9",
+        "id": "10",
+        "username": "10",
+        "password": "$2y$10$P3kPP9CFTujzkLhWw0G\/F.z1jR20uME.u.M1xaj0muCR.zXw7Ib.W",
+        "money": "998392"
+    },
+    {
+        "name": "111",
+        "id": "1111",
+        "username": "1111",
+        "password": "$2y$10$BIUJ5PJuIYIrU.dDcg45Tu5Wy5b0QMHzcll8HEkaixwfIqhLArxXe",
+        "money": 0
+    },
+    {
+        "name": "fcccd",
+        "id": "205220016",
+        "username": "958902573@qq.com",
+        "password": "$2y$10$xip4twwMCdU4LfCS\/hKhL.ICA5jaNd1uBr7qQGjaNKnb6de5pLKOy",
+        "money": "106767"
+    },
+    {
+        "name": "49816+58468",
+        "id": "gyuguuh",
+        "username": "ftyufy6fyu",
+        "password": "$2y$10$KUtAyskG\/5QDExF8m1THZOZ9lqFALakHBrFXFIHU9ZPGxzpLFPJ0O",
+        "money": 0
+    },
+    {
+        "name": "12212",
+        "id": "1231231",
+        "username": "121313",
+        "password": "$2y$10$h.T7rTGWTRwpoUBIF51RAOyiNgXP42VaScNcWeV23A7ywO7bw7.XK",
+        "money": 0
+    },
+    {
+        "name": "dwadawda",
+        "id": "dawdadaw",
+        "username": "dawdawdwa",
+        "password": "$2y$10$N2dx8el5\/NGF\/tDoVZFySuqTZTjdmtvF55ZDLVntNhzXQHQlcl8Nm",
+        "money": 0
+    },
+    {
+        "name": "1111",
+        "id": "1\u306e1eda",
+        "username": "ddawdad",
+        "password": "$2y$10$dMCTasoa3fIH\/6R7QSGmPuioq6X49BoIzNVcxM7yHtWQ\/m6rDKQR2",
+        "money": 0
+    },
+    {
+        "name": "111",
+        "id": "111",
+        "username": "111",
+        "password": "$2y$10$9ONYnDEmEeNp1L.J\/UiNIu6.7Zq7ybA56M8ACbZXIe5KTQ.0QO3ti",
+        "money": 0
+    }
+]
