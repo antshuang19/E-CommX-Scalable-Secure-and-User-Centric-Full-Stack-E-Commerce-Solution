@@ -6,8 +6,6 @@ This project presents the design and implementation of a **full-stack E-commerce
 
 The application’s key features include a dynamic **product catalog**, an interactive **shopping cart** system, a **secure checkout** process, and an **admin interface** for product and order management. The thesis evaluates the technical challenges of building a full-stack application with JSON as the primary data storage medium, comparing it to traditional relational database management systems (RDBMS) in terms of scalability, performance, and maintainability.
 
-This work also includes in-depth discussions on security best practices for handling user data, password management with bcrypt hashing, and protection against common web application vulnerabilities such as Cross-Site Request Forgery (CSRF) and SQL injection. Furthermore, the scalability and future-proofing of the system are considered, with discussions on transitioning from file-based storage to a more robust database management system (DBMS) in large-scale deployment scenarios.
-
 ## Project Overview
 
 The project explores the full-stack development lifecycle, from frontend design and backend logic to deployment strategies. Using PHP as the server-side scripting language and JavaScript (ES6+) for dynamic frontend interactions, the application is designed to be both **modular** and **scalable**, facilitating the integration of new features, such as a payment gateway, real-time order tracking, and support for additional product categories.
@@ -84,4 +82,4 @@ The architecture of the application follows the **Model-View-Controller (MVC)** 
 ### 1. Clone the Repository:
 ```bash
 git clone https://github.com/your-username/ecommerce-web-app.git
-cd ecommerce-web-app
+cd ecommerce-web-app](https://github.com/antshuang19/E-CommX-Scalable-Secure-and-User-Centric-Full-Stack-E-Commerce-Solution.git)
