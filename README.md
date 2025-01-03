@@ -1,46 +1,60 @@
-# E-commerce Web Application
+# Design and Implementation of a Full-Stack E-commerce Web Application: A Scalable Solution.
+---
 
-## Project Overview
+## Core Features Breakdown
 
-This project is a full-stack web application designed to demonstrate a robust and scalable E-commerce platform using **JavaScript**, **PHP**, and **JSON** files for data storage. It features user authentication, dynamic product catalog management, a shopping cart system, and an order management system.
+### 1. **User Authentication**
+   - **Session-based Authentication**: Secure login and registration pages, with password hashing using bcrypt to store user credentials safely.
+   - **CSRF Tokens**: Every form submission includes a unique CSRF token to prevent Cross-Site Request Forgery.
+   - **User Management**: Admin users can manage user accounts and reset passwords securely.
 
-### Problem Statement:
-The primary goal of this project is to build a scalable, secure, and responsive E-commerce website that enables users to browse products, manage shopping carts, and simulate secure online transactions. Additionally, it provides an admin interface to manage product inventory and process orders.
+### 2. **Product Catalog**
+   - **Product Display**: A dynamic list of products is fetched from `products.json` and rendered on the homepage.
+   - **Filtering and Sorting**: Products can be filtered by category, price range, or sorted based on popularity or price.
+   - **Product Detail Page**: Each product has a detailed page with images, descriptions, and the option to add the product to the cart.
 
-### Core Features:
-- **User Authentication**: Implement secure login and registration systems using PHP sessions and hashed passwords.
-- **Product Catalog**: Display a dynamic list of products, filterable by category, price, etc.
-- **Shopping Cart**: Allow users to add, update, and remove items from their cart, and calculate total order cost.
-- **Checkout Process**: Simulate a checkout process with order review and submission (integrating JSON file-based persistence).
-- **Order Management**: Admin interface to view and manage orders.
-- **Security**: Implement basic input validation, password hashing, and secure form handling.
+### 3. **Shopping Cart**
+   - **Add, Remove, Update**: Users can add products to the cart, update quantities, and remove items.
+   - **Cart Persistence**: Cart items are stored in the user's session, which persists across page reloads.
+   - **Total Price Calculation**: The total cost of the cart is calculated dynamically based on product price and quantity.
 
-### Technologies:
-- **Frontend**: HTML5, CSS3 (SASS), JavaScript (ES6+), jQuery
-- **Backend**: PHP, JSON for data storage
-- **Security**: HTTPS, Password Hashing with bcrypt, CSRF Tokens
-- **Deployment**: Docker, Apache/Nginx, Heroku/AWS
-- **Tools**: Git, Docker, Postman for API testing
+### 4. **Checkout Process**
+   - **Order Summary**: Users can review their cart items before confirming the order.
+   - **Order Confirmation**: When users place an order, it’s stored in the `orders.json` file, and the cart is cleared.
+   - **Order Review**: Admin users can view and process orders directly from the order management page.
+
+### 5. **Admin Panel**
+   - **Product Management**: Admins can add, edit, and delete products by updating the `products.json` file manually (or via API).
+   - **Order Management**: Admins can view all orders placed, including product details, quantities, and total amounts.
+   - **Data Export**: Admins can export order details as JSON files for reporting or integration with other systems.
 
 ---
 
-## System Architecture
+## Security Considerations
 
-The system follows a **Model-View-Controller (MVC)** architecture pattern, ensuring a clean separation of concerns and ease of maintenance.
+### 1. **Password Storage**:
+   - Passwords are hashed using bcrypt to ensure they are securely stored and not retrievable in plain text.
 
-1. **Model**:
-   - Data is managed using JSON files (`products.json`, `orders.json`). For larger applications, consider moving to a full-fledged database like MySQL or MongoDB.
-   
-2. **View**:
-   - HTML, CSS, and JavaScript render the UI dynamically. React or Vue.js could be considered for future iterations for a more dynamic experience.
+### 2. **SQL Injection Prevention**:
+   - Although we are using JSON for data storage, if you decide to scale this system to a relational database in the future, ensure that you use prepared statements and parameterized queries to protect against SQL injection attacks.
 
-3. **Controller**:
-   - PHP handles the routing, business logic, and processing of requests such as adding products to the cart, submitting orders, etc.
-   - Session management is handled via PHP sessions, ensuring security and data persistence during the user's visit.
+### 3. **Cross-Site Scripting (XSS)**:
+   - Ensure that user-generated content is sanitized before being rendered on the page to prevent malicious scripts from executing.
+
+### 4. **Cross-Site Request Forgery (CSRF)**:
+   - Use CSRF tokens in all forms to prevent unauthorized form submissions.
 
 ---
 
-## Folder Structure
+## Installation Instructions
 
-The project uses a modular folder structure to promote scalability and maintainability.
+### Prerequisites:
+- **PHP 7.4+** for backend scripting.
+- **Node.js and npm** (for future JavaScript modules if added).
+- **Docker** (for containerized deployment).
 
+### 1. Clone the Repository:
+
+```bash
+git clone https://github.com/your-username/ecommerce-web-app.git
+cd ecommerce-web-app
