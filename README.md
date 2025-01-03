@@ -57,4 +57,4 @@
 
 ```bash
 git clone https://github.com/your-username/ecommerce-web-app.git
-cd ecommerce-web-app
+cd ecommerce-web-app](https://github.com/antshuang19/Full-Stack-E-commerce-Web-Application.git
